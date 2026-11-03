@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jetson-depth-studio"
+version = "0.1.0"
+description = "Toolkit to support depth vision with monocular and depth cameras on NVIDIA Jetson."
+readme = "README.md"
+requires-python = ">=3.8"
+# pyrealsense2 is built from source on Jetson (scripts/install_librealsense.sh), so it is not listed here.
+dependencies = ["numpy", "opencv-python-headless"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+depthstudio = "depthstudio.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["hardware: needs a camera attached (run with DEPTHSTUDIO_HW=1)"]
