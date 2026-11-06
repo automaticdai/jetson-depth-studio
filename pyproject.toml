@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "jetson-depth-studio"
+name = "nvidia-jetson-depth-studio"
 version = "0.1.0"
 description = "Toolkit to support depth vision with monocular and depth cameras on NVIDIA Jetson."
 readme = "README.md"

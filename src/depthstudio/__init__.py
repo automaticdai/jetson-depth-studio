@@ -1,4 +1,4 @@
-"""jetson-depth-studio: depth vision with monocular and depth cameras on NVIDIA Jetson."""
+"""nvidia-jetson-depth-studio: depth vision with monocular and depth cameras on NVIDIA Jetson."""
 
 from .frames import Frame, ImuSample, Intrinsics
 from .sources import Source, open_source

@@ -1,4 +1,4 @@
-# jetson-depth-studio
+# nvidia-jetson-depth-studio
 Toolkit to support depth vision with monocular and depth cameras.
 
 Targets an NVIDIA Jetson Nano (JetPack 4.6, Ubuntu 18.04) with an Intel RealSense D435i and the
